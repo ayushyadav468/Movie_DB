@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.nitantsood.moviedb.ShowDetailActiivity"
+    tools:showIn="@layout/activity_show_detail_actiivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <include layout="@layout/show_detail_header"/>
+        <include layout="@layout/movie_detail_storyline_genre_view" />
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:id="@+id/show_detail_image_viewer"/>
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            app:cardCornerRadius="30dp"
+            android:background="@color/cardview_dark_background">
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/video_fetch_button"
+                android:text="Trailer/Teaser"
+                android:textSize="18sp"
+                android:textColor="@android:color/white"
+                android:textAlignment="center"
+                android:elevation="20dp"
+                android:background="@color/cardview_dark_background"/>
+        </android.support.v7.widget.CardView>
+        <include layout="@layout/cast_layout"/>
+        <include layout="@layout/category_layout"/>
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

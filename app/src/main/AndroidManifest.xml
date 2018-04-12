@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.nitantsood.moviedb">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MovieDetailActivity"
+            android:label="@string/title_activity_movie_detail"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".ReviewsActivity" />
+        <activity android:name=".ViedeoListViewer" />
+        <activity android:name=".VideoPlayer" />
+        <activity
+            android:name=".ShowDetailActiivity"
+            android:label="@string/title_activity_show_detail_actiivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".CelebDetailActivity"
+            android:label="@string/title_activity_celeb_detail"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".ImageIndependentViewer" />
+        <activity android:name=".SearchActivity" />
+        <activity android:name=".MovieSearchActivity" />
+        <activity android:name=".TvSearchActivity" />
+        <activity android:name=".CelebSearchActivity"></activity>
+    </application>
+
+</manifest>

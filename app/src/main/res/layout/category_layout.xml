@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:paddingTop="15dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:layout_height="wrap_content"
+    android:fillViewport="true">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:id="@+id/category_header"
+            android:layout_width="match_parent"
+            android:background="#212121"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            android:layout_height="70dp">
+
+            <TextView
+                android:id="@+id/list_type"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:paddingLeft="5dp"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                android:foregroundGravity="center_vertical"
+                android:textSize="30sp"
+                android:text="List Type" />
+
+            <!--<Button-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textSize="15sp"-->
+                <!--android:gravity="center"-->
+                <!--android:layout_alignBaseline="@+id/list_type"-->
+                <!--android:background="@android:color/transparent"-->
+                <!--android:text="See All"-->
+                <!--android:id="@+id/show_full_list"-->
+                <!--app:layout_behavior="@string/appbar_scrolling_view_behavior"-->
+                <!--android:textColor="@android:color/holo_blue_dark"-->
+                <!--android:layout_alignBottom="@+id/list_type"-->
+                <!--android:layout_alignParentEnd="true" />-->
+        </RelativeLayout>
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            android:id="@+id/category_list">
+        </android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>
